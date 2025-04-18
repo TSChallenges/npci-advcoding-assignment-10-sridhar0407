@@ -7,7 +7,15 @@ public class OrderResponse {
     private Integer qty;
     private String productName;
     private Double totalPrice;
+    public OrderResponse(String orderId, Integer productId, Integer qty, String productName, double totalPrice) {
+        this.orderId= Long.valueOf(orderId);
+        this.productId=productId;
+        this.qty=qty;
+        this.productName=productName;
+        this.totalPrice=totalPrice;
 
+
+    }
     public Long getOrderId() {
         return orderId;
     }
